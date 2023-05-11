@@ -14,7 +14,7 @@ self.addEventListener('install', event=>{
                     return cache.addAll([
                         '/',
                         'exampwa/index.html',
-                        '/img/error-404.png',
+                        'img/error-404.png',
                         'exampwa/img/noImage.png',
                         'exampwa/img/agua.png',
                         'exampwa/img/fuego.png',
