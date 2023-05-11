@@ -13,7 +13,7 @@ self.addEventListener('install', event=>{
               .then(cache=>{
                     return cache.addAll([
                         'index.html',
-                        'img/error-404.png'
+                        'img/error-404.png',
                         'img/noImage.png',
                         'img/agua.png',
                         'img/fuego.png',
