@@ -12,8 +12,7 @@ self.addEventListener('install', event=>{
             const cacheInstallEstatico = caches.open(cache_estatico) //open crea y abre el cache
               .then(cache=>{
                     return cache.addAll([
-                        '/',
-                        '/exampwa/index.html'
+                        'index.html'
 //                         'img/error-404.png',
 //                         'exampwa/img/noImage.png',
 //                         'exampwa/img/agua.png',
