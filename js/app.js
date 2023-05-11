@@ -1,2 +1,2 @@
 if(navigator.serviceWorker)
-navigator.serviceWorker.register('exampwa/js/sw.js')  
+navigator.serviceWorker.register('/exampwa/sw.js')  
