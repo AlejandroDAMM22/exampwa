@@ -13,18 +13,18 @@ self.addEventListener('install', event=>{
               .then(cache=>{
                     return cache.addAll([
                         '/',
-                        '/exampwa/index.html',
-                        '/exampwa/img/error-404.png',
-                        '/exampwa/img/noImage.png',
-                        '/exampwa/img/agua.png',
-                        '/exampwa/img/fuego.png',
-                        '/exampwa/img/logo.png',
-                        '/exampwa/img/planta.png',
-                        '/exampwa/js/app.js',
-                        '/exampwa/pages/Offline.html',
-                        '/exampwa/pages/fuego.html',
-                        '/exampwa/pages/planta.html',
-                        '/exampwa/manifest.json'
+                        'exampwa/index.html',
+                        '/img/error-404.png',
+                        'exampwa/img/noImage.png',
+                        'exampwa/img/agua.png',
+                        'exampwa/img/fuego.png',
+                        'exampwa/img/logo.png',
+                        'exampwa/img/planta.png',
+                        'exampwa/js/app.js',
+                        'exampwa/pages/Offline.html',
+                        'exampwa/pages/fuego.html',
+                        'exampwa/pages/planta.html',
+                        'exampwa/manifest.json'
                     ]);
 
                 })
