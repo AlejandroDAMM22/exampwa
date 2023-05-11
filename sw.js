@@ -13,18 +13,18 @@ self.addEventListener('install', event=>{
               .then(cache=>{
                     return cache.addAll([
                         '/',
-                        '/index.html',
-                        '/img/error-404.png',
-                        '/img/noImage.png',
-                        '/img/agua.png',
-                        '/img/fuego.png',
-                        '/img/logo.png',
-                        '/img/planta.png',
-                        '/js/app.js',
-                        '/pages/Offline.html',
-                        '/pages/fuego.html',
-                        '/pages/planta.html',
-                        '/manifest.json'
+                        '/exampwa/index.html',
+                        '/exampwa/img/error-404.png',
+                        '/exampwa/img/noImage.png',
+                        '/exampwa/img/agua.png',
+                        '/exampwa/img/fuego.png',
+                        '/exampwa/img/logo.png',
+                        '/exampwa/img/planta.png',
+                        '/exampwa/js/app.js',
+                        '/exampwa/pages/Offline.html',
+                        '/exampwa/pages/fuego.html',
+                        '/exampwa/pages/planta.html',
+                        '/exampwa/manifest.json'
                     ]);
 
                 })
@@ -45,7 +45,7 @@ self.addEventListener('install', event=>{
             const falloUnaVez = () => {
                 if (rechazada) {
                     if (/\.(png|jpg)$/i.test(a.request.url)) {
-                        resolve(caches.match('img/noImage.png'));
+                        resolve(caches.match('/exampwa/img/noImage.png'));
                     } else {
                         reject('No se encontro respuesta')
                     }
@@ -75,7 +75,7 @@ self.addEventListener('install', event=>{
         // si la solicitud es para un documento HTML y falla la respuesta, responder con la página offline.html
         if (a.request.headers.get('accept').includes('text/html')) {
             a.respondWith(
-                respuesta.catch(() => caches.match('pages/Offline.html'))
+                respuesta.catch(() => caches.match('/exampwa/pages/Offline.html'))
             );
         } else {
             a.respondWith(respuesta);
