@@ -14,16 +14,16 @@ self.addEventListener('install', event=>{
                     return cache.addAll([
                         'index.html',
                         'img/error-404.png'
-//                         'exampwa/img/noImage.png',
-//                         'exampwa/img/agua.png',
-//                         'exampwa/img/fuego.png',
-//                         'exampwa/img/logo.png',
-//                         'exampwa/img/planta.png',
-//                         'exampwa/js/app.js',
-//                         'exampwa/pages/Offline.html',
-//                         'exampwa/pages/fuego.html',
-//                         'exampwa/pages/planta.html',
-//                         'exampwa/manifest.json'
+                        'img/noImage.png',
+                        'img/agua.png',
+                        'img/fuego.png',
+                        'img/logo.png',
+                        'img/planta.png',
+                        'js/app.js',
+                        'pages/Offline.html',
+                        'pages/fuego.html',
+                        'pages/planta.html',
+                        'manifest.json'
                     ]);
 
                 })
